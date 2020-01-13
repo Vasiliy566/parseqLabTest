@@ -24,14 +24,13 @@ def findGenInAnn(): # genDescription from target
 	for genDiscription in target:
 		chrom = getChromosomeTarget(genDiscription)
 		coord = getCoordinatesTarget(genDiscription)
-		ann = open("GCF_000001405.39_GRCh38.p13_genomic.gff", "r")
+		ann = open("data/GCF_000001405.39_GRCh38.p13_genomic.gff", "r")
 		written = False
 		for l in ann: # must be boosted with binary search
 			if l[0] != "#":
 				
 				match = ( (getChromosomeAnn(l) == chrom) and (getCoordinatesAnn(l)[0] <= coord[0]) and (getCoordinatesAnn(l)[1] >= coord[1]) and(l.split("\t")[2] != "region")) 
 				if( match ):
-					print(l.split("\t"))
 					descripted_target.write(genDiscription + l.split("\t")[8] )
 					descripted_target.flush()
 					written = True
@@ -52,7 +51,7 @@ def getGenes():
 		if gen not in genes:
 			if gen != -1:
 				genes.append(gen)
-	print(genes)	
+	return genes	
 #simple tests
 def tests(debug = False):
 	#target panel tests
