@@ -10,6 +10,8 @@
 •	Для того, чтобы узнать список заболеваний, для которых можно использовать данную панель с помощью метода gene set enrichment на сайте http://amp.pharm.mssm.edu/
 
 •	Так же если посмотреть на функции найденых генов, то можно предположить, что их мутации могут привести к аутосомным заболеваниям, в частности к диабету и к гиперинсулинизму
+![im1](https://github.com/Vasiliy566/parseqLabTest/blob/master/results/Screenshot%202020-01-13%20at%2004.11.34.png)
+![im2](https://github.com/Vasiliy566/parseqLabTest/blob/master/results/Screenshot%202020-01-13%20at%2004.11.48.png)
 
 ## Задание 2.
 •	Сначала хотел использовать выравнивания между целевыми и нецелевыми генами, но в задании написано, что нужно посмотреть 100% гомологию
@@ -28,8 +30,7 @@ samtools faidx data/GCF_000001405.39_GRCh38.p13_genomic.fna {}:{}-{} >> data/seq
 Б. Некоторые не нашлись, как мне кажется – это нецелевые регионы
 	3.   Все алгоритмы реализованы в методах, что затрудняет их использование
 	4.  Файлы задаются вручную, что является минусом для масштабируемости 
-![im1](https://github.com/Vasiliy566/parseqLabTest/blob/master/results/Screenshot%202020-01-13%20at%2004.11.34.png)
-![im2](https://github.com/Vasiliy566/parseqLabTest/blob/master/results/Screenshot%202020-01-13%20at%2004.11.48.png)
+
 
 ### author
 Исаев Василий
