@@ -28,8 +28,12 @@ samtools faidx data/GCF_000001405.39_GRCh38.p13_genomic.fna {}:{}-{} >> data/seq
 Б. Некоторые не нашлись, как мне кажется – это нецелевые регионы
 	3.   Все алгоритмы реализованы в методах, что затрудняет их использование
 	4.  Файлы задаются вручную, что является минусом для масштабируемости 
+![im1](https://github.com/Vasiliy566/parseqLabTest/blob/master/results/Screenshot%202020-01-13%20at%2004.11.34.png)
+![im2](https://github.com/Vasiliy566/parseqLabTest/blob/master/results/Screenshot%202020-01-13%20at%2004.11.48.png)
 
 ### author
 Исаев Василий
+
 Vasyaisaev31@gmail.com
+
 Тестовое задание для parseqLab
