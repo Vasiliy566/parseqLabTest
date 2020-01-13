@@ -32,9 +32,9 @@ chromes = [">NC_000001.11 Homo sapiens chromosome 1, GRCh38.p13 Primary Assembly
 ">NC_000022.11 Homo sapiens chromosome 22, GRCh38.p13 Primary Assembly",
 ">NC_000023.11 Homo sapiens chromosome X, GRCh38.p13 Primary Assembly",
 ">NC_000024.10 Homo sapiens chromosome Y, GRCh38.p13 Primary Assembly"]
-#out = open('sequences.txt', "w+")
-ref = open("GCF_000001405.39_GRCh38.p13_genomic.fna", 'r') #80 symbols in string
-inp = open("descripted_target.bed", 'r')
+
+ref = open("data/GCF_000001405.39_GRCh38.p13_genomic.fna", 'r') #80 symbols in string
+inp = open("results/discripted_target.bed", 'r')
 
 for l in  inp:
 	#print(l)

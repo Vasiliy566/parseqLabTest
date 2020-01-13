@@ -1,5 +1,5 @@
 
-def findMatches:
+def findMatches():
 	ss = []
 	info = []
 	f = open('data/sequences.txt', 'r')
@@ -34,7 +34,7 @@ def findMatches:
 def printResult(matches):
 	usless = []
 	useful = []
-	f = open("data/descripted_target.bed")
+	f = open("results/discripted_target.bed")
 	for l in f:
 		if len(l.split("\t")) == 6:
 			usless.append([l.split("\t")[1], l.split("\t")[2]])
